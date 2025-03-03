@@ -1,0 +1,135 @@
+/* design.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #87CEFA; /* Light blue color */
+    color: black; /* Changing text color to black for better contrast */
+    padding: 5px 10px; /* Reduced padding for shorter header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;        
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: 5px; /* Reduced margin for shorter header */
+    padding: 3px; /* Adding some padding for better visibility */
+    border-radius: 5px; /* Adding rounded corners for a nicer look */
+    width: 80px; /* Reduced width for smaller logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 60px; /* Added margin-top to prevent content overlapping with fixed header */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+form label, form input, form button {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+form input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffcc00;
+}
+
+footer {
+    background-color: #87CEFA; /* Light blue color */
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Make sure the footer stays at the bottom */
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #1e90ff; /* Change color on hover */
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
